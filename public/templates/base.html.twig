@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
+
+    <!-- Search Engine -->
+    <meta name="description" content="Jaarverslag 2018">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Het Jaar In Beeld">
+    <meta itemprop="description" content="Jaarverslag 2018">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Het Jaar In Beeld">
+    <meta name="og:description" content="Jaarverslag 2018">
+    <meta name="og:image" content="assets/header/2018.png">
+    <meta name="og:url" content="http://hetjaarinbeeld.nl">
+    <meta name="og:site_name" content="Het Jaar In Beeld">
+    <meta name="og:locale" content="nl">
+    <meta name="og:type" content="website">
+
+    <link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
+<body class="w-full h-full text-white">
+    <div class="video-trigger-top"></div>
+    <div class="video-trigger-bottom"></div>
+
     {% block content %}{% endblock %}
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

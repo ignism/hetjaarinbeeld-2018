@@ -1,0 +1,97 @@
+{% extends "components/page.html.twig" %}
+
+{% block leftContent %}
+    <p>
+        Wij geloven in een ‘inclusieve samenleving’. Een maatschappij waarin iedereen zijn of haar bijdrage levert en in staat gesteld wordt die te leveren. Dat maken we concreet door een waardevolle ervaringsplek te bieden aan vele vrijwilligers en stagiairs. Alle vrijwilligers krijgen bij ons een ‘maatje’ en een plan om aan eigen leerdoelen te kunnen werken. Studenten vinden in de bibliotheek een stageplaats of krijgen de ruimte om schoolopdrachten uit te voeren.
+    </p>
+    <p>
+        De bibliotheek is dé plek waar je als werkzoekende een steuntje in de rug vindt door een bijeenkomst van ‘Werk aan Werken’ te bezoeken. We leiden internationals en vluchtelingen rond in onze bibliotheek en met kerst was het Bibliotheekcafé dé plek voor ontmoeting. Ook
+        <a target="_blank" href="https://www.facebook.com/BibliotheekEindhoven/posts/lange-volle-tafel-bij-samen-etengisterenavond-heeft-gast-kok-veronica-curiel-de-/2238386599522686/">‘Samen Eten’</a>
+        heeft een vaste plek in de programmering veroverd. Elke laatste vrijdag van de maand zijn de tafels gedekt voor een gezamenlijke maaltijd met stadsgenoten.
+    </p>
+{% endblock %}
+
+{% block rightContent %}
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Rondleidingen voor vluchtelingen
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-xl">190</span><br>
+                groepen
+            </div>
+            <div class="w-1/2">
+                <span class="number-xl">220</span><br>
+                deelnemers
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                De Bibliotheek bood:
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-lg">23</span><br>
+                mensen een leer-werktraject
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">6</span><br>
+                mensen een taaltraject
+            </div>
+        </div>
+        <div class="w-4/5">
+            {% include "components/video.html.twig" with {
+                source : "MD_1.mp4"
+            } %}
+            mensen begeleiding naar een betaalde baan
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                De Bibliotheek bood in totaal ruimte/begeleiding aan:
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-lg">143</span><br>
+                vrijwilligers
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">14</span><br>
+                stagiairs
+            </div>
+        </div>
+        <div class="w-1/5 flex flex-wrap items-start pl-6">
+            <a target="_blank" href="http://hetjaarinbeeld.nl/downloads/flyer_vrijwilligers.pdf" class="text-{{ color }}-dark">
+                Vrijwilliger bij de bieb... iets voor jou<br>
+                <img class="mt-2" src="/assets/chapter-five/link-yellow.svg" style="width: 44px">
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                In beeld
+            </p>
+        </div>
+    </div>
+
+
+{% endblock %}

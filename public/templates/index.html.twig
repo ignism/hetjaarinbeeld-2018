@@ -1,5 +1,311 @@
 {% extends "base.html.twig" %}
-
+{# caption: {
+                    text: 'Lorem ipsum<br>Dolor sit',
+                    x: '10%',
+                    y: '10%'
+                } #}
 {% block content %}
-het jaar in beeld
+
+    {% include "partials/header.html.twig" with {
+        color : "orange"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color : "orange",
+        slides: [
+            {
+                image: "/assets/header/slide001.jpg",
+                caption: ""
+            }, {
+                image: "/assets/header/slide002.jpg",
+                caption: ""
+            }, {
+                image: "/assets/header/slide003.jpg",
+                caption: ""
+            }, {
+                image: "/assets/header/slide004.jpg",
+                caption: ""
+            }, {
+                image: "/assets/header/slide005.jpg",
+                caption: ""
+            }, {
+                image: "/assets/header/slide006.jpg",
+                caption: ""
+            }
+        ]
+    } %}
+
+    {% include "partials/feiten-en-cijfers.html.twig" with {
+        color: 'pink',
+        currentPage: 0,
+        title: 'Feiten en Cijfers'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        slides: [
+            { 
+                image: '/assets/chapter-one/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-one/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-one/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-one/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-one/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-one/slide006.jpg',
+                caption: ''
+            },
+        ]
+    } %}
+
+    {% include "partials/leesplezier.html.twig" with {
+        color : "green",
+        currentPage: 1,
+        title: "Leesplezier"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'green',
+        slides: [
+            { 
+                image: '/assets/chapter-two/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-two/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-two/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-two/slide004.jpg',
+                caption: {
+                    x: '7.5%',
+                    y: '5%',
+                    text: 'Schoolschrijver<br>Anja Vereijken'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide005.jpg',
+                caption: {
+                    x: '7.5%',
+                    y: '25%',
+                    text: 'Poppenkast tijdens<br>de Nationale<br>Voorleesdagen'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide006.jpg',
+                caption: {
+                    x: '7.5%',
+                    y: '5%',
+                    text: 'De altijd spannende<br>finale van de Nationale<br>Voorleeswedstrijd'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide007.jpg',
+                caption: {
+                    x: '50%',
+                    y: '40%',
+                    text: 'Swingen op het<br>jaarlijkse BoekieBal'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide008.jpg',
+                caption: {
+                    x: '60%',
+                    y: '35%',
+                    text: 'Verhalen delen tijdens<br>het Verhalenfestival'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide009.jpg',
+                caption: {
+                    x: '40%',
+                    y: '5%',
+                    text: 'William Staal<br>wint het Groot<br>Dictee Eindhoven'
+                }
+            },
+            { 
+                image: '/assets/chapter-two/slide010.jpg',
+                caption: {
+                    x: '65%',
+                    y: '30%',
+                    text: 'Anja Frieling, de<br>winnaar van de <br>\'Prijs voor Eindhovens<br>Schrijftalent 2018\''
+                }
+            },
+        ]
+    } %}
+
+    {% include "partials/digitale-geletterdheid.html.twig" with {
+        color: 'red',
+        currentPage: 2,
+        title: 'Digitale geletterdheid'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'red',
+        slides: [
+            { 
+                image: '/assets/chapter-three/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-three/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-three/slide003.jpg',
+                caption: {
+                    x: '65%',
+                    y: '10%',
+                    text: 'FIFA 19 met PSV<br>eSporter Ali Riza Aygün'
+                }  
+            },
+            { 
+                image: '/assets/chapter-three/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-three/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-three/slide006.jpg',
+                caption: ''
+            },
+        ]
+    } %}
+
+    {% include "partials/kennisdeling-en-talentontwikkeling.html.twig" with {
+        color: 'blue',
+        currentPage: 3,
+        title: 'Kennisdeling en Talent-<br> ontwikkeling'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'blue',
+        slides: [
+            { 
+                image: '/assets/chapter-four/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-four/slide002.jpg',
+                caption: {
+                    x: '15%',
+                    y: '10%',
+                    text: 'Chazia Mourali'
+                    }
+            },
+            { 
+                image: '/assets/chapter-four/slide003.jpg',
+                caption: {
+                    x: '7.5%',
+                    y: '10%',
+                    text: 'Femke Halsema'
+                    }
+            },
+            { 
+                image: '/assets/chapter-four/slide004.jpg',
+                caption: {
+                    x: '65%',
+                    y: '20%',
+                    text: 'Jan Terlouw'
+                    }
+            },
+            { 
+                image: '/assets/chapter-four/slide005.jpg',
+                caption: {
+                    x: '65%',
+                    y: '35%',
+                    text: 'Human Library'
+                    }
+            },
+            { 
+                image: '/assets/chapter-four/slide006.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-four/slide007.jpg',
+                caption: ''
+            },
+            { 
+                image: '/assets/chapter-four/slide008.jpg',
+                caption: ''
+            },
+        ]
+    } %}
+
+    {% include "partials/meedoen.html.twig" with {
+        color : "yellow",
+        currentPage: 4,
+        title: "Meedoen"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'yellow',
+        slides: [
+            { 
+                image: '/assets/chapter-five/slide001.jpg',
+                caption: {
+                    x: '25%',
+                    y: '5%',
+                    text: 'Samen de taal leren'
+                    }
+            },
+            { 
+                image: '/assets/chapter-five/slide002.jpg',
+                caption: {
+                    x: '65%',
+                    y: '5%',
+                    text: 'Met dank aan de<br>enthousiaste vrijwilligers'
+                    }
+            },
+            { 
+                image: '/assets/chapter-five/slide003.jpg',
+                caption: {
+                    x: '65%',
+                    y: '10%',
+                    text: 'In gesprek blijven,<br>van elkaar leren'
+                    }
+            },
+            { 
+                image: '/assets/chapter-five/slide004.jpg',
+                caption: {
+                    x: '60%',
+                    y: '5%',
+                    text: 'Een team om<br>op te bouwen'
+                    }
+            },
+            { 
+                image: '/assets/chapter-five/slide005.jpg',
+                caption: {
+                    x: '65%',
+                    y: '5%',
+                    text: 'Bedankavond<br>bewonersbibliotheken'
+                    }
+            },
+        ]
+    } %}
+
+    {% include "partials/verbonden-met-de-stad.html.twig" with {
+        color: 'yellow',
+        currentPage: 4,
+        title: 'Meedoen'
+    } %}
+
 {% endblock %}

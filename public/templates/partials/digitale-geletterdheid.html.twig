@@ -1,0 +1,274 @@
+{% extends "components/page.html.twig" %}
+
+{% block leftContent %}
+    <p>
+        Om je in de 21e eeuw goed te kunnen ontwikkelen is digitale geletterdheid een absolute randvoorwaarde. Veel basisscholen springen op deze ontwikkeling in. De mediacoaches met hun up-to-date kennis over digitale ontwikkelingen bieden ondersteuning. En ontwikkelen nieuwe projecten om op de scholen in te zetten zoals <a target="_blank" href="https://www.bibliotheekeindhoven.nl/dam/bestanden/boekje-jeugd-en-educatie-web.pdf
+p.20-21">Vindingwijs en Brainy.</a>
+    </p>
+    <p>
+        Onderwijsvernieuwing is in groeiende mate van belang. Daarom hebben we tijdens de Dutch Design Week een exclusief event voor collega's uit de bibliotheekbranche georganiseerd; de <a target="_blank" href="https://www.youtube.com/watch?v=yqNuu7P0MfA">Innovation Factory</a>. Welke dwarsverbanden zijn er te leggen tussen <a target="_blank" href="https://www.youtube.com/watch?v=75CeoYk2rDk">Design Thinking</a> en onderwijsvernieuwing, en welke rol speelt de bibliotheek als aanjager en facilitator?
+    </p>
+    <p>
+        Kinderen leren veel door te doen. In het Warehouse of Innovation was daar volop gelegenheid voor tijdens de <a target="_blank" href="https://www.facebook.com/BibliotheekEindhoven/ videos/2391712590869767/">Makersclub</a> of het 3D Print Lab. In de Witte Dame kunnen kinderen kennismaken met AppLab van Cinekid; tablets met een speciale selectie innovatieve en educatieve apps.
+    </p>
+    <p>
+        Ook voor volwassenen is er een <a target="_blank" href="https://www.bibliotheekeindhoven.nl/Leren-en-Studeren/taal-en-digitale-vaardigheden.html">uitgebreid programma</a>. Naast ons vaste programma in de Witte Dame en Waalre bieden we samen met Digitolk het programma <a target="_blank" href="https://www.bibliotheekeindhoven.nl/Leren-en-Studeren/taal-en-digitale-vaardigheden/digisterker.html">Digisterker</a> ook aan in buurtcentra in Woensel en Stratum.
+    </p>
+    <p>
+        Om je wereld te verbreden ligt er op twee plekken in de Witte Dame een VR-bril, vrij te gebruiken.
+    </p>
+{% endblock %}
+
+{% block rightContent %}
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Aantal uitgeleende boeken
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+
+            <div class="w-1/3">
+                <span class="number-lg">103</span><br>bijeenkomsten
+            </div>
+            <div class="w-1/3">
+                <span class="number-lg">353</span><br>bezoekers
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Klik &amp; Tik
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <span class="number-lg">256</span><br>gevolgde lessen
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Schoolprojecten digitale geletterdheid
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <p class="text-{{ color }}-dark">
+                Projecten
+            </p>
+            {% include "components/video.html.twig" with {
+                source : "DG_1.mp4"
+            } %}
+        </div>
+        <div class="w-4/5 pt-6 flex flex-wrap">
+            <p class="text-{{ color }}-dark">
+                Kinderen die deelnamen
+            </p>
+            {% include "components/video.html.twig" with {
+                source : "DG_2.mp4"
+            } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                We groeiden flink op social media
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/6">
+                <img class="block h-full w-max-full p-2" src="/assets/chapter-three/twitter.svg">
+            </div>
+            <div class="w-1/3 flex items-center">
+                <div class="pl-4">
+                    <span class="number-sm">2.478</span><br>
+                    volgers op Twitter
+                </div>
+            </div>
+            <div class="w-1/6">
+                <img class="block h-full w-max-full p-2" src="/assets/chapter-three/linkedin.svg">
+            </div>
+            <div class="w-1/3 flex items-center">
+                <div class="pl-4">
+                    <span class="number-sm">889</span><br>
+                    volgers op LinkedIn
+                </div>
+            </div>
+        </div>
+        <div class="w-1/5 flex flex-wrap items-start pl-6">
+            <a target="_blank" href="/assets/chapter-three/Twitter.JPG" class="text-{{ color }}-dark">
+                Dit vonden we leuk op Twitter: Microbioloog Rosanne Hertzberger komt naar de bieb (7.043 mensen bereikt)<br>
+                <img class="mt-2" src="/assets/chapter-three/link-red.svg" style="width: 44px">
+            </a>
+        </div>
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/6">
+                <img class="block h-full w-max-full p-2" src="/assets/chapter-three/instagram.svg">
+            </div>
+            <div class="w-5/12 flex items-center">
+                <div class="pl-4">
+                    <span class="number-lg">1.507</span><br>
+                    volgers op Instagram
+                </div>
+            </div>
+            <div class="w-5/12">
+                {% include "components/video.html.twig" with {
+                    source : "DG_3.mp4"
+                } %}
+            </div>
+        </div>
+        <div class="w-1/5 flex flex-wrap items-end pl-6">
+            <a target="_blank" href="/assets/chapter-three/Bookface.JPG" class="text-{{ color }}-dark">
+                Populair op Instagram: #Bookfacefriday<br>
+                <img class="mt-2" src="/assets/chapter-three/link-red.svg" style="width: 44px">
+            </a>
+        </div>
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/6">
+                <img class="block h-full w-max-full p-2" src="/assets/chapter-three/instagram.svg">
+            </div>
+            <div class="w-5/12 flex items-center">
+                <div class="pl-4">
+                    <span class="number-lg">6.010</span><br>
+                    likes op Facebook
+                </div>
+            </div>
+            <div class="w-5/12">
+                {% include "components/video.html.twig" with {
+                    source : "DG_4.mp4"
+                } %}
+            </div>
+        </div>
+        <div class="w-1/5 flex flex-wrap items-end pl-6">
+            <a target="_blank" href="/assets/chapter-three/FB.JPG" class="text-{{ color }}-dark">
+                Dit vonden we leuk op Facebook: Kom werken als mediacoach! (14.702 mensen bereikt)<br>
+                <img class="mt-2" src="/assets/chapter-three/link-red.svg" style="width: 44px">
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Website
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5">
+            <span class="number-lg">161.773</span><br>unieke bezoekers
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Nieuwsbrief
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5">
+            <span class="number-xl">9.532</span><br>ontvangers algemene nieuwsbrief
+        </div>
+        <div class="w-4/5  pt-6 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-lg">5.139</span><br>
+                ontvangers<br>jeugdnieuwsbrief<br>Pink &amp; Pienter
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">5.018</span><br>
+                ontvangers nieuwsbrief<br>Jeugd &amp; Educatief
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Blog
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-lg">642</span><br>
+                bezoekers
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">1.877</span><br>
+                weergaven
+            </div>
+        </div>
+        <div class="w-1/5 flex flex-wrap items-end pl-6">
+            <a target="_blank" href="https://bibliotheekeindhovenblog.com/" class="text-{{ color }}-dark">
+                De BoekenBlog van collectioneur Fanny<br>
+                <img class="mt-2" src="/assets/chapter-three/link-red.svg" style="width: 44px">
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                App
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5">
+            <span class="number-xl">2.989</span><br>
+            gebruikers
+        </div>
+        <div class="w-1/5 flex flex-wrap items-end pl-6">
+            <a target="_blank" href="https://www.bibliotheekeindhoven.nl/diensten/de-bibliotheek-app.html" class="text-{{ color }}-dark">
+                Download de app!<br>
+                <img class="mt-2" src="/assets/chapter-three/link-red.svg" style="width: 44px">
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                Whatsapp-dienst
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 pt-0">
+        <div class="w-4/5 flex flex-wrap justify-between">
+            <div class="w-1/2 flex items-center">
+                <div>
+                    <span class="number-2xl">428</span><br>
+                    vragen
+                </div>
+            </div>
+            <div class="w-5/12">
+                <img class="block h-full w-max-full p-2" src="/assets/chapter-three/whatsapp.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t-2 border-{{ color }}-dark">
+                In beeld
+            </p>
+        </div>
+    </div>
+
+
+{% endblock %}

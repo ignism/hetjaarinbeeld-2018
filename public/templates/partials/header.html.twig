@@ -1,0 +1,49 @@
+<header class="header bg-{{ color }} pb-16">
+    <div class="container mx-auto">
+        <div class="cover-wrapper relative">
+            <div class="w-1/4 absolute pin-b pin-r z-20" style="margin-right: 10%">
+                <img class="block" src="/assets/header/2018.png">
+            </div>
+            <div class="w-full absolute pin-t pin-l z-10" style="">
+                <img class="block ml-6 mt-12 w-1/4 xl:w-1/6" src="/assets/header/logo.png">
+            </div>
+            <div class="w-full absolute pin-b z-10" style="width: calc(100% + 8px); transform: translate(-4px, 0)">
+                <img class="block" src="/assets/header/header.png">
+            </div>
+            <div class="w-full relative z-0" style="transform: translate(0, -4px)">
+                <img class="block" src="/assets/header/cover.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-wrap pt-6 pb-6">
+        <div class="w-2/3 flex-none">
+            <div class="sticky pin-t flex">
+                <div class="w-1/4 p-6">
+                    <ul class="menu mt-20 list-reset">
+                        <li class="nav-item" data-target="0">Feiten en cijfers</li>
+                        <li class="nav-item" data-target="1">Leesplezier</li>
+                        <li class="nav-item" data-target="2">Digitale geletterdheid</li>
+                        <li class="nav-item" data-target="3">Kennisdeling en<br>
+                            <span class="ml-2">Talentontwikkeling</span></li>
+                        <li class="nav-item" data-target="4">Meedoen</li>
+                        <li class="nav-item" data-target="5">Verbonden met de stad</li>
+                    </ul>
+                </div>
+                <div class="text w-3/4 p-6 pr-12">
+                    <h1 class="text-5xl text-{{ color }}-dark mb-8 leading-none">&nbsp;</h1>
+                    {% block leftContent %}
+                        <p>De samenleving verandert snel. Wij denken een voorhoederol te kunnen spelen in deze snel veranderende Eindhovense samenleving en geloven in onze betekenis voor de ontwikkeling van de stad en haar inwoners.</p>
+<p>2018 stond voor ons in het teken van onderzoek, gesprekken met de stad en het opstellen van een nieuw visiedocument. Het onderzoek leverde twaalf bouwstenen op voor de bibliotheek van de toekomst.</p>
+<p>De bibliotheek is, en blijft, een toegankelijke plek voor inspiratie, het opdoen van ervaringen, verdieping en het delen van kennis. Als contentregisseur brengen wij de juiste partijen bij elkaar om inhoud uit te diepen en toegankelijk te maken voor een breed publiek. Maar we zijn ook een contentspecialist, door zelf verdieping aan te brengen en kennis uit te dragen. Bijvoorbeeld als het gaat over het bevorderen van leesplezier of digitale vaardigheden.</p>
+<p>We richten ons op de toekomst. Maar niet zonder met aandacht en trots stil te staan bij wat we al hebben en zijn.</p>
+<p>We realiseerden dit jaar forse besparingen in onze exploitatie (162.800 euro) onder meer door rechtstreeks in te kopen bij het Centraal boekhuis. Voor diverse projecten en innovaties werd 166.782 euro aan extra subsidies en inkomsten gegenereerd. Een totaal van bijna 330.000 euro aan besparingen en extra inkomsten.</p>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        <div class="statistic w-1/2">
+            {% block rightContent %}
+            {% endblock %}
+        </div>
+    </div>
+</header>

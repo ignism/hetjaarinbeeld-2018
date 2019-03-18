@@ -5,7 +5,7 @@ require_once __DIR__.'/vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem(__DIR__.'/templates');
 $twig = new Twig_Environment($loader);
 
-$title = 'Het Jaar In Beeld';
+$title = 'Het Jaar In Beeld - 2018';
 
 $content = [
     'title' => $title
